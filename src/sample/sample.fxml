@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="center" hgap="10" prefHeight="591.0" prefWidth="931.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <HBox prefHeight="645.0" prefWidth="945.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="500.0" prefWidth="280.0">
+               <children>
+                  <Button fx:id="RockButton" mnemonicParsing="false" onAction="#chooseRock" prefHeight="50.0" prefWidth="100.0" text="Rock">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="PaperButton" mnemonicParsing="false" onAction="#choosePaper" prefHeight="50.0" prefWidth="100.0" text="Paper">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="ScissorButton" mnemonicParsing="false" onAction="#chooseScissor" prefHeight="50.0" prefWidth="100.0" text="Scissor">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="500.0" prefWidth="350.0">
+               <children>
+                  <TextField maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" text=" The Player" />
+                  <ImageView fx:id="PImageView" fitHeight="200.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" />
+                  <TextField alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="300.0" text="Previous choice by Player">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextArea fx:id="PlayerFormerChoiceTextArea" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="300.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TextArea>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="500.0" prefWidth="350.0">
+               <children>
+                  <TextField maxWidth="-Infinity" prefHeight="25.0" prefWidth="200.0" text="The AI">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TextField>
+                  <ImageView fx:id="AIImageView" fitHeight="200.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ImageView>
+                  <TextField alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="300.0" text="Previous choice by AI">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextArea fx:id="AIFormerChoiceTextArea" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="300.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TextArea>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</GridPane>
